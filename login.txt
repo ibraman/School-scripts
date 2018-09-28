@@ -1,0 +1,42 @@
+#!/bin/bash
+
+echo "   ""  "   IBRA SECURITY LOGIN!
+#
+#
+
+echo "Please enter your Username:"
+
+read username
+
+echo "please enter your Password:"
+#
+#
+echo
+read -s password1
+echo "please repeat your password:"
+read -s password2
+#
+#
+echo
+if [ $password1 = $password2 ]; then
+echo "your password matches"
+#
+# 
+echo
+echo Great! we now have your login info
+#
+#
+echo
+echo "  " "  "$username! WELCOME TO IBRA SECURITY
+#
+else 
+echo "Are you kidding!!"
+#
+#
+echo
+echo "Dude! your password does not match"
+#
+#
+echo BYE!
+ exit
+fi
